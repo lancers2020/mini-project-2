@@ -2,37 +2,133 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Login Page */
+.Login-container{
+  position: relative;
+  background-color: #3B3486;
+  height: 600px;
+  width: 40%;
+  margin: 60px auto auto auto;
+
+  background-image: linear-gradient(45deg, #001253, #4C0033);
+
+  /* border-style: solid;
+  border-image: linear-gradient(transparent, #20196b, transparent) 1% 1% stretch;
+  border-image-width: 10px; */
+
+  /* box-shadow: 0 0 6px 3px rgb(0, 109, 115); */
+}
+.Login-container:hover{
+
+  background-image: linear-gradient(45deg,#120a6a , #790c79);
+  /* border-image: linear-gradient(#20196b, transparent,#20196b) 1% stretch;
+  border-style: solid;
+  border-image-width: 10px; */
+}
+span{
+  z-index: 2;
+}
+span:nth-child(1){
+  position: absolute;
+  /* border-left: 10px solid black; */
+  top: 50%;
+  bottom: -15px;
+  left: -25px;
+  transition-duration: .3s;
+  box-shadow:  0 0 6px 10px black;
+}
+span:nth-child(2){
+  position: absolute;
+  /* border-right: 10px solid orange; */
+  bottom: 70%;
+  top: -15px;
+  right: -25px;
+  transition-duration: .3s;
+  box-shadow: 0 0 6px 10px orange;
+}
+span:nth-child(3){
+  position: absolute;
+  /* border-top: 5px solid violet; */
+  top: -20px;
+  left: -15px;
+  right: 80%;
+  transition-duration: .3s;
+  box-shadow: 0 0 6px 10px violet;
+}
+span:nth-child(4){
+  position: absolute;
+  /* border-top: 5px solid rgb(1, 131, 1); */
+  bottom: -25px;
+  right: -15px;
+  left: 40%;
+  transition-duration: .3s;
+  box-shadow: 0 0 6px 10px rgb(1, 131, 1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Login-container:hover > span:nth-child(1){
+  position: absolute;
+  /* border-left: 10px solid violet; */
+  bottom: 50%;
+  top: -15px;
+  left: -25px;
+  transition-duration: .4s;
+  box-shadow: 0 0 6px 10px violet;
+}
+.Login-container:hover > span:nth-child(2){
+  position: absolute;
+  /* border-right: 10px solid rgb(1, 131, 1); */
+  top: 70%;
+  bottom: -15px;
+  right: -25px;
+  transition-duration: .4s;
+  box-shadow: 0 0 6px 10px rgb(1, 131, 1);
+}
+.Login-container:hover > span:nth-child(3){
+  position: absolute;
+  /* border-top: 5px solid orange; */
+  top: -20px;
+  right: -15px;
+  left: 40%;
+  transition-duration: .3s;
+  box-shadow: 0 0 6px 10px orange;
+}
+.Login-container:hover > span:nth-child(4){
+  position: absolute;
+  /* border-top: 5px solid black; */
+  bottom: -25px;
+  left: -15px;
+  right: 90%;
+  transition-duration: .3s;
+  box-shadow: 0 0 6px 10px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+input{
+  line-height: 2rem;
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 5px;
+  width: 65%;
+}
+input:focus{
+  outline: none;
+}
+
+/* button{
+  font-size: 30px;
+  border: 2px solid white;
+  transition-duration: .1s;
+  width: 40%;
+  border-radius: 5px;
+  background-color: #5FD068;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button:active{
+  transform: scale(1.2);
+  transition-duration: .2s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.Login-button:hover{
+  background-color: #8D72E1;
+  color: white;
+  border: 2px solid white;
+} */
