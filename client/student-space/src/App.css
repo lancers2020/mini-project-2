@@ -9,28 +9,16 @@
   height: 600px;
   width: 40%;
   margin: 60px auto auto auto;
-
   background-image: linear-gradient(45deg, #001253, #4C0033);
-
-  /* border-style: solid;
-  border-image: linear-gradient(transparent, #20196b, transparent) 1% 1% stretch;
-  border-image-width: 10px; */
-
-  /* box-shadow: 0 0 6px 3px rgb(0, 109, 115); */
 }
 .Login-container:hover{
-
   background-image: linear-gradient(45deg,#120a6a , #790c79);
-  /* border-image: linear-gradient(#20196b, transparent,#20196b) 1% stretch;
-  border-style: solid;
-  border-image-width: 10px; */
 }
 span{
   z-index: 2;
 }
 span:nth-child(1){
   position: absolute;
-  /* border-left: 10px solid black; */
   top: 50%;
   bottom: -15px;
   left: -25px;
@@ -39,7 +27,6 @@ span:nth-child(1){
 }
 span:nth-child(2){
   position: absolute;
-  /* border-right: 10px solid orange; */
   bottom: 70%;
   top: -15px;
   right: -25px;
@@ -48,7 +35,6 @@ span:nth-child(2){
 }
 span:nth-child(3){
   position: absolute;
-  /* border-top: 5px solid violet; */
   top: -20px;
   left: -15px;
   right: 80%;
@@ -57,7 +43,6 @@ span:nth-child(3){
 }
 span:nth-child(4){
   position: absolute;
-  /* border-top: 5px solid rgb(1, 131, 1); */
   bottom: -25px;
   right: -15px;
   left: 40%;
@@ -67,7 +52,6 @@ span:nth-child(4){
 
 .Login-container:hover > span:nth-child(1){
   position: absolute;
-  /* border-left: 10px solid violet; */
   bottom: 50%;
   top: -15px;
   left: -25px;
@@ -76,7 +60,6 @@ span:nth-child(4){
 }
 .Login-container:hover > span:nth-child(2){
   position: absolute;
-  /* border-right: 10px solid rgb(1, 131, 1); */
   top: 70%;
   bottom: -15px;
   right: -25px;
@@ -85,7 +68,6 @@ span:nth-child(4){
 }
 .Login-container:hover > span:nth-child(3){
   position: absolute;
-  /* border-top: 5px solid orange; */
   top: -20px;
   right: -15px;
   left: 40%;
@@ -94,7 +76,6 @@ span:nth-child(4){
 }
 .Login-container:hover > span:nth-child(4){
   position: absolute;
-  /* border-top: 5px solid black; */
   bottom: -25px;
   left: -15px;
   right: 90%;
@@ -114,21 +95,47 @@ input:focus{
   outline: none;
 }
 
-/* button{
+/* Navbar */
+.navbarWrapper>div,
+.navbarWrapper>div>div{
+  display: flex;
+}
+.navbarWrapper>div>div{
+  /* background-color: red; */
+  margin: 0 5px;
+  width: 100%;
+  justify-content: center;
+}
+.navbarWrapper>div>div:nth-child(3){
+  justify-content: flex-end;
+}
+.navbarWrapper>div>div:nth-child(1){
+  width: 400px;
+}
+.navbarWrapper>div{
+  background-color: #570A57;
+  padding: 1px;
+  justify-content: center;
+  border-bottom: 5px solid #570A57;
+}
+.navbarWrapper>div>div>div{
+  /* background-color: yellow; */
+  padding: 10px 10px 0 10px;
   font-size: 30px;
-  border: 2px solid white;
-  transition-duration: .1s;
-  width: 40%;
-  border-radius: 5px;
-  background-color: #5FD068;
-  color: white;
+  margin: 0 5px;
+  border-bottom: 10px solid rgb(255, 255, 255, 0);
+  border-top: 10px solid rgb(255, 255, 255, 0);
 }
-button:active{
-  transform: scale(1.2);
-  transition-duration: .2s;
+.navbarWrapper>div>div:nth-child(1)>div:nth-child(1){
+  padding: 0;
+  padding-top: 10px;
+  /* background-color: red; */
 }
-.Login-button:hover{
-  background-color: #8D72E1;
+.navbarWrapper>div>div>div:hover{
+  border-bottom: 10px solid white;
+}
+.navbarWrapper>div>div>div>.link{
+  text-decoration: none;
   color: white;
-  border: 2px solid white;
-} */
+  /* background-color: black; */
+}
