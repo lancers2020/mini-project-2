@@ -1,9 +1,13 @@
-import React from 'react'
+import React from 'react';
+import Calculator from '../Calculator';
 
 function Home() {
   return (
-    <div>HOME Page</div>
-  )
+    <div>
+      <div>HOME Page</div>
+      <Calculator />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
