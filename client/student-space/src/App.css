@@ -121,10 +121,11 @@ input:focus{
 .navbarWrapper>div>div>div{
   /* background-color: yellow; */
   padding: 10px 10px 0 10px;
+  height: 45px;
   font-size: 30px;
   margin: 0 5px;
-  border-bottom: 10px solid rgb(255, 255, 255, 0);
-  border-top: 10px solid rgb(255, 255, 255, 0);
+  border-bottom: 5px solid rgb(255, 255, 255, 0);
+  border-top: 5px solid rgb(255, 255, 255, 0);
 }
 .navbarWrapper>div>div:nth-child(1)>div:nth-child(1){
   padding: 0;
@@ -132,7 +133,7 @@ input:focus{
   /* background-color: red; */
 }
 .navbarWrapper>div>div>div:hover{
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
 }
 .navbarWrapper>div>div>div>.link{
   text-decoration: none;
