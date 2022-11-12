@@ -4,7 +4,7 @@ import IconTodo from '../todo-app/IconTodo';
 
 function Home() {
   return (
-    <div>
+    <div style={{display: "flex", justifyContent: "center"}}>
       <IconTodo/>
       <IconCal/>
     </div>

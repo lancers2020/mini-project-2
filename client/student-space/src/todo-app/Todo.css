@@ -1,0 +1,9 @@
+.todo-wrapper{
+    background-color: red;
+    padding: 10px;
+}
+.todo-wrapper>div{
+    display: flex;
+    background-color: yellow;
+    align-items: center;
+}
