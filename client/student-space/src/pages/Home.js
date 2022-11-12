@@ -1,11 +1,12 @@
 import React from 'react';
-import Calculator from '../Calculator';
+import IconCal from '../calculator/IconCalculator';
+import IconTodo from '../todo-app/IconTodo';
 
 function Home() {
   return (
     <div>
-      <div>HOME Page</div>
-      <Calculator />
+      <IconTodo/>
+      <IconCal/>
     </div>
   );
 }
