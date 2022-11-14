@@ -30,7 +30,9 @@ function Navbar() {
             </div>
           </div>
           <div>
-            <Link className="link" to="/menu">Menu</Link>
+            <Link className="link" to="/menu">
+              Menu
+            </Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Calculator = () => {
+const Calculator = ({event}) => {
   const [result, setResult] = useState('');
 
   const handleClick = (e) => {
@@ -23,10 +23,10 @@ const Calculator = () => {
   };
 
   return (
-    <>
-      <div className='container'>
+      <div className='cal-container'>
+        <div onClick={event} className="cal-x">close</div>
         <form>
-          <input type='text' value={result}></input>
+          <input readOnly type='text' value={result}></input>
         </form>
 
         <div className='keypad'>
@@ -86,7 +86,6 @@ const Calculator = () => {
           </button>
         </div>
       </div>
-    </>
   );
 };
 

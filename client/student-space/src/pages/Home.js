@@ -6,8 +6,12 @@ import "./Pages.css";
 function Home() {
   return (
     <div className='home-container'>
-      <IconTodo />
-      <IconCalculator />
+      <div style={{marginInline: "10px"}}>
+        <IconTodo />
+      </div>
+      <div style={{marginInline: "10px"}}>
+        <IconCalculator />
+      </div>
     </div>
   );
 }
