@@ -14,7 +14,7 @@ function Home() {
     >
       <IconTodo />
       <IconCal />
-      <div></div>
+      <div>UwU</div>
     </div>
   );
 }
