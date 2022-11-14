@@ -1,13 +1,14 @@
-import React,{Component, useEffect, useState} from "react";
+import React,{Component, useContext, useEffect, useState} from "react";
 import Button from "../components/Button";
 import Input from "../components/Input";
 import Card from "../components/Card";
 import "./Todo.css";
 import Axios from "axios";
+// import {TodoContext} from "./IconTodo";
 
 
 
-export default function Todo(){
+export default function Todo({event}){
 
     function Content({data}){
         const deleteHandler=(id)=>{
@@ -58,11 +59,12 @@ export default function Todo(){
             console.log("uwu, axios get success!")
         });
     },[show]);
+    // const {setIsClicked} = useContext(TodoContext);
 
     return(
         <div className="todo-wrapper">
             <div>
-                <div className="todo-x">close</div>
+                <div onClick={event} className="todo-x">close</div>
                 <Input value={task} onChange={(e)=>{setTask(e.target.value)}} margin="0 5px 0 0" border="none" radius="5px" placeHolder="todo here ..."/>
                 <Button onClick={taskHandler} className="todo-button" fSize="20px" padding="8px" name="add"/>
             </div>

@@ -1,23 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import Button from '../components/Button';
 import Todo from './Todo';
 
-export default function IconTodo() {
-  const [isClicked, setIsClicked] = useState(false);
-  const Content = () => {
-    if (isClicked) {
-      return <Todo />;
-    } else {
-      return (
-        <Button
-          name='Todo'
-          onClick={() => {
-            setIsClicked(true);
-          }}
-        />
-      );
-    }
-  };
+// export const TodoContext = createContext(null);
 
-  return <Content />;
+export default function IconTodo() {
+const [isClicked, setIsClicked] = useState(false);
+const callBack = () =>{
+  setIsClicked(false);
+}
+const Content = () => {
+  if (isClicked) {
+    return (
+      // <TodoContext.Provider value={{isClicked, setIsClicked}}>
+        <Todo event={callBack}/>
+      // </TodoContext.Provider>
+    );
+  } else {
+    return (
+        <Button
+        name='Todo'
+        onClick={() => {
+          setIsClicked(true);
+        }}
+      />
+    );
+  }
+};
+
+  return (
+        <Content />
+  );
 }

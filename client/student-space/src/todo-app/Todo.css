@@ -50,6 +50,7 @@
     padding: 5px 10px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
     /* border: 2px solid #838383; */
 }
 .todo-x:hover{
