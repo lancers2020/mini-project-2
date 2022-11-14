@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 /* Login Page */
 .Login-container{
   position: relative;
@@ -89,7 +85,6 @@ input{
   letter-spacing: 2px;
   font-size: 20px;
   padding: 5px;
-  width: 65%;
 }
 input:focus{
   outline: none;
