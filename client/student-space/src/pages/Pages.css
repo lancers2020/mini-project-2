@@ -7,3 +7,42 @@
     height: 100vh;
     /* background-color: red; */
 }
+
+/* grades page */
+.grades-container{
+    /* background-color: red; */
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layout-container{
+    background-color: greenyellow;
+    width: 800px;
+    height: 550px;
+    padding: 5px;
+}
+.layout-container>div:nth-child(1){
+    background-color: aliceblue;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.layout-container>div:nth-child(2){
+    background-color: gold;
+    padding: 5px;
+}
+.layout-container>div>div:nth-child(1){
+    background-color: aquamarine;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.layout-container>div>div:nth-child(2){
+    background-color: burlywood;
+    width: 100%;
+}
