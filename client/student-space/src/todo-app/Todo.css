@@ -1,9 +1,60 @@
 .todo-wrapper{
+    background-color: #FFFBC1;
+    padding: 5px;
+    box-shadow: 0 0 20px 1px grey;
+}
+.todo-wrapper>div:nth-child(1){
+    display: flex;
+    background-color: #FFB200;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.todo-wrapper>div:nth-child(2){
+    background-color: #ffda7e;
+    border-radius: 5px;
+}
+.todo-button:hover{
+    background-color: #00b40f;
+}
+
+
+.todo-content-parent:hover{
+    cursor: pointer;
+}
+.todo-content-child{
+    padding: 2px 5px;
+    border: 2px solid rgb(0, 0, 0, 0);
+}
+.todo-content-child:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #ffc942;
+}
+.todo-content-child>.todo-content-button{
+    background-color: rgb(255, 114, 114);
+}
+.todo-content-child>.todo-content-button:hover{
     background-color: red;
-    padding: 10px;
+}
+
+
+/* this is for X */
+.todo-x{
+    position: absolute;
+    background-color: rgb(255, 114, 114);
+    right: -5px;
+    top: -78%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.todo-x:hover{
+    background-color: red;
+    color: white;
+    border-color: white;
 }
 .todo-wrapper>div{
-    display: flex;
-    background-color: yellow;
-    align-items: center;
+    position: relative;
 }

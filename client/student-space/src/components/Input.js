@@ -1,9 +1,7 @@
 import React from "react";
 
-export default function Input({margin, placeHolder, onChange, type}){
+export default function Input({value, margin, placeHolder, onChange, type, width, radius, border}){
     return(
-        <div>
-            <input onChange={onChange} style={{margin: margin}} type={type} placeholder={placeHolder}/>
-        </div>
+            <input value={value} onChange={onChange} style={{margin: margin, width: width, borderRadius: radius, border: border}} type={type} placeholder={placeHolder}/>
     )
 }

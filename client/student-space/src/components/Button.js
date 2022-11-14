@@ -11,10 +11,13 @@ import "./Components.css";
 //     }
 // }
 
-export default function Button({className, name, margin, padding, onClick}){
+export default function Button({className, name, margin, padding, onClick, bgColor, fSize}){
     return(
         <button onClick={onClick} className={className} style={{
-            margin: margin, padding: padding
+            margin: margin,
+            padding: padding,
+            backgroundColor: bgColor,
+            fontSize: fSize
         }}>{name}</button>
     )
 }
