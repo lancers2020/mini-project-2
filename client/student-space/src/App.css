@@ -3,126 +3,125 @@
 }
 
 /* Login Page */
-.Login-container{
+.Login-container {
   position: relative;
-  background-color: #3B3486;
+  background-color: #3b3486;
   height: 600px;
   width: 40%;
   margin: 60px auto auto auto;
-  background-image: linear-gradient(45deg, #001253, #4C0033);
+  background-image: linear-gradient(45deg, #001253, #4c0033);
 }
-.Login-container:hover{
-  background-image: linear-gradient(45deg,#120a6a , #790c79);
+.Login-container:hover {
+  background-image: linear-gradient(45deg, #120a6a, #790c79);
 }
-span{
+span {
   z-index: 2;
 }
-span:nth-child(1){
+span:nth-child(1) {
   position: absolute;
   top: 50%;
   bottom: -15px;
   left: -25px;
-  transition-duration: .3s;
-  box-shadow:  0 0 6px 10px black;
+  transition-duration: 0.3s;
+  box-shadow: 0 0 6px 10px black;
 }
-span:nth-child(2){
+span:nth-child(2) {
   position: absolute;
   bottom: 70%;
   top: -15px;
   right: -25px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   box-shadow: 0 0 6px 10px orange;
 }
-span:nth-child(3){
+span:nth-child(3) {
   position: absolute;
   top: -20px;
   left: -15px;
   right: 80%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   box-shadow: 0 0 6px 10px violet;
 }
-span:nth-child(4){
+span:nth-child(4) {
   position: absolute;
   bottom: -25px;
   right: -15px;
   left: 40%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   box-shadow: 0 0 6px 10px rgb(1, 131, 1);
 }
 
-.Login-container:hover > span:nth-child(1){
+.Login-container:hover > span:nth-child(1) {
   position: absolute;
   bottom: 50%;
   top: -15px;
   left: -25px;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   box-shadow: 0 0 6px 10px violet;
 }
-.Login-container:hover > span:nth-child(2){
+.Login-container:hover > span:nth-child(2) {
   position: absolute;
   top: 70%;
   bottom: -15px;
   right: -25px;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   box-shadow: 0 0 6px 10px rgb(1, 131, 1);
 }
-.Login-container:hover > span:nth-child(3){
+.Login-container:hover > span:nth-child(3) {
   position: absolute;
   top: -20px;
   right: -15px;
   left: 40%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   box-shadow: 0 0 6px 10px orange;
 }
-.Login-container:hover > span:nth-child(4){
+.Login-container:hover > span:nth-child(4) {
   position: absolute;
   bottom: -25px;
   left: -15px;
   right: 90%;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   box-shadow: 0 0 6px 10px black;
 }
 
-
-input{
+input {
   line-height: 2rem;
   letter-spacing: 2px;
   font-size: 20px;
   padding: 5px;
   width: 65%;
 }
-input:focus{
+input:focus {
   outline: none;
 }
 
 /* Navbar */
-.navbarWrapper{
+.navbarWrapper {
   position: fixed;
   width: 100%;
 }
-.navbarWrapper>div,
-.navbarWrapper>div>div{
+.navbarWrapper > div,
+.navbarWrapper > div > div {
   display: flex;
 }
-.navbarWrapper>div>div{
+.navbarWrapper > div > div {
   /* background-color: red; */
   margin: 0 5px;
   width: 100%;
   justify-content: center;
 }
-.navbarWrapper>div>div:nth-child(3){
+.navbarWrapper > div > div:nth-child(3) {
   justify-content: flex-end;
 }
-.navbarWrapper>div>div:nth-child(1){
+.navbarWrapper > div > div:nth-child(1) {
   width: 400px;
 }
-.navbarWrapper>div{
-  background-color: #570A57;
+.navbarWrapper > div {
+  background-color: #570a57;
   padding: 1px;
   justify-content: center;
-  border-bottom: 5px solid #570A57;
+  border-bottom: 5px solid #570a57;
 }
-.navbarWrapper>div>div>div{
+.navbarWrapper > div > div > div {
   /* background-color: yellow; */
   padding: 10px 10px 0 10px;
   height: 45px;
@@ -131,16 +130,121 @@ input:focus{
   border-bottom: 5px solid rgb(255, 255, 255, 0);
   border-top: 5px solid rgb(255, 255, 255, 0);
 }
-.navbarWrapper>div>div:nth-child(1)>div:nth-child(1){
+.navbarWrapper > div > div:nth-child(1) > div:nth-child(1) {
   padding: 0;
   padding-top: 10px;
   /* background-color: red; */
 }
-.navbarWrapper>div>div>div:hover{
+.navbarWrapper > div > div > div:hover {
   border-bottom: 5px solid white;
 }
-.navbarWrapper>div>div>div>.link{
+.navbarWrapper > div > div > div > .link {
   text-decoration: none;
   color: white;
   /* background-color: black; */
+}
+
+/* calculator css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 256px;
+  text-align: center;
+  border: 10px solid #101116;
+  background-color: #101116;
+  border-radius: 5px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+}
+
+input[type='text'] {
+  height: 75px;
+  width: 250px;
+  background-color: #10111600;
+  border: 0;
+  color: #ffffff;
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#clear {
+  grid-column: 1/3;
+  grid-row: 1;
+  color: #ffffff;
+}
+
+#result {
+  grid-column: 3/5;
+  grid-row: 5;
+  color: #ffffff;
+}
+
+#backspace {
+  color: #ffffff;
+}
+
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* background-color: #262834; */
+  background-color: #e9f0f4;
+  color: #242424;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: #242424;
+  color: #e9f0f4;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+.operators {
+  background-color: #f2a33c;
+}
+
+.operators:hover {
+  background-color: #cf711f;
+}
+
+.reset {
+  background-color: #5a5a5a;
+}
+
+.equals {
+  background-color: #e67e22;
+}
+
+.equals:hover {
+  background-color: #f2a33c;
 }
