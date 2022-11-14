@@ -1,9 +1,9 @@
 import React,{Component} from 'react'
 import "./Components.css"
 
-function Card({height, padding, margin, content, minHeight}) {
+function Card({height, padding, margin, content, overflowX, overflowY}) {
   return (
-    <div style={{minHeight: minHeight, margin: margin, padding: padding}} className='card-wrapper'>
+    <div style={{overflowY: overflowY,overflowX: overflowX ,height: height, margin: margin, padding: padding}}>
       {content}
     </div>
   )

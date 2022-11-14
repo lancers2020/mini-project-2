@@ -96,6 +96,10 @@ input:focus{
 }
 
 /* Navbar */
+.navbarWrapper{
+  position: fixed;
+  width: 100%;
+}
 .navbarWrapper>div,
 .navbarWrapper>div>div{
   display: flex;

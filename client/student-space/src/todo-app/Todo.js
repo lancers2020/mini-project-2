@@ -62,11 +62,13 @@ export default function Todo(){
     return(
         <div className="todo-wrapper">
             <div>
-                <div className="todo-x">X</div>
+                <div className="todo-x">close</div>
                 <Input value={task} onChange={(e)=>{setTask(e.target.value)}} margin="0 5px 0 0" border="none" radius="5px" placeHolder="todo here ..."/>
                 <Button onClick={taskHandler} className="todo-button" fSize="20px" padding="8px" name="add"/>
             </div>
-            <Card minHeight="300px" content={<Content data={todoData}/>}/>
+            <div style={{overflowY: "auto"}}>
+              <Card overflowY="auto" height="300px" content={<Content data={todoData}/>}/>
+            </div>
         </div>
     )
 }

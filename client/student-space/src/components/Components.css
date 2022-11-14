@@ -19,7 +19,3 @@ button:hover{
   border: 2px solid white;
   cursor: pointer;
 }
-
-.card-wrapper{
-  background-color: red;
-}

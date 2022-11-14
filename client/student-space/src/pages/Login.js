@@ -50,7 +50,9 @@ export default function Login(){
                         placeHolder="Password"
                         type="password"
                     />
-                    <Button onClick={onSubmit} className="Login-button" name="Login" margin="20px" padding="20px"/>
+                    <div>
+                        <Button onClick={onSubmit} className="Login-button" name="Login" margin="20px" padding="20px"/>
+                    </div>
                 </div>
             )
         }else{

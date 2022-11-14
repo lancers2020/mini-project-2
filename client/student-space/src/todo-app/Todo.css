@@ -5,11 +5,12 @@
 }
 .todo-wrapper>div:nth-child(1){
     display: flex;
-    background-color: #FFB200;
+    background-color: #838383;
     align-items: center;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 3px;
+    justify-content: center;
 }
 .todo-wrapper>div:nth-child(2){
     background-color: #ffda7e;
@@ -43,12 +44,13 @@
 /* this is for X */
 .todo-x{
     position: absolute;
-    background-color: rgb(255, 114, 114);
+    background-color: #FFFBC1;
     right: -5px;
-    top: -78%;
+    top: -69%;
     padding: 5px 10px;
-    border-radius: 5px;
-    border: 2px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /* border: 2px solid #838383; */
 }
 .todo-x:hover{
     background-color: red;
