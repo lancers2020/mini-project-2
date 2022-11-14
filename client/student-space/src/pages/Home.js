@@ -12,6 +12,9 @@ function Home() {
     }}>
       <IconTodo/>
       <IconCal/>
+      <div>
+        UwU
+      </div>
     </div>
   );
 }
