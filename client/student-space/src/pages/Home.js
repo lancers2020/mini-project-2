@@ -5,17 +5,9 @@ import "./Pages.css";
 
 function Home() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        margin: '15%',
-        alignItems: 'center',
-      }}
-    >
+    <div className='home-container'>
       <IconTodo />
       <IconCal />
-      <div>UwU</div>
     </div>
   );
 }
