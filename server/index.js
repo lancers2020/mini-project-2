@@ -7,7 +7,6 @@ app.use(cors());
 app.use(express.json());
 
 
-//this is for ToDo App
 const db = mysql.createConnection({
     user: "root",
     host: "localhost",
@@ -15,6 +14,9 @@ const db = mysql.createConnection({
     database: "studentsystem"
 });
 
+
+
+//this is for ToDo App
 app.post("/todo/post", (req, res) =>{
     const task = req.body.task;
     db.query(
@@ -36,7 +38,7 @@ app.get("/todo/get", (req, res) =>{
                 console.log(err);
             }else{
                 res.send(result);
-                console.log("get success")
+                console.log("get success");
             }
         }
     )
@@ -51,6 +53,24 @@ app.delete("/todo/id/:id", (req, res)=>{
         }
     })
 });
+
+
+
+//this is for Grades.js page
+app.get("/grades", (req, res) => {
+    db.query(
+        "SELECT * FROM grades", (err, result) => {
+            if(err){
+                console.log(err);
+            }else{
+                res.send(result);
+                console.log("get success");
+            }
+        }
+    )
+})
+
+
 
 app.listen(3001, ()=>{
     console.log("server is running on port 3001");

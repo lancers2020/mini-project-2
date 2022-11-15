@@ -31,7 +31,8 @@
     align-items: center;
     height: 150px;
 }
-.layout-container>div:nth-child(2){
+.layout-container>div:nth-child(2),
+.layout-container>div:nth-child(3){
     background-color: gold;
     padding: 5px;
 }
@@ -49,12 +50,20 @@
     background-color: burlywood;
     width: 100%;
 }
+.layout-container>div>div:nth-child(2) select{
+    font-size: 20px;
+    border: none;
+    font-family: cursive;
+}
 .layout-details{
     /* background-color: red; */
     text-align: start;
     margin-left: 10px;
     font-size: 25px;
     font-family: cursive;
+}
+.layout-details>div:nth-child(3){
+    font-size: 18px;
 }
 .layout-container img{
     display: flex;

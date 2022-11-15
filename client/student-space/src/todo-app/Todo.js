@@ -56,7 +56,7 @@ export default function Todo({event}){
     useEffect(()=>{
         Axios.get("http://localhost:3001/todo/get").then((response)=>{
             setTodoData(response.data);
-            console.log("uwu, axios get success!")
+            console.log("uwu, axios get success!");
         });
     },[show]);
     // const {setIsClicked} = useContext(TodoContext);
