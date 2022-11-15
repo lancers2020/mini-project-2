@@ -1,15 +1,17 @@
 import React,{Component} from 'react';
 import "./Pages.css";
+import Profilelogo from "../pictures/profile-user.png";
 
 function Layout(){
   return(
     <div className='layout-container'>
       <div>
         <div>
-          <div>photo</div>
-          <div>
-            <div>name</div>
-            <div>class</div>
+          <div><img src={Profilelogo} alt="profile" width="140px" height="auto"/></div>
+          <div className='layout-details'>
+            <div>Dave C. Limutin</div>
+            <div>Grade 10-Zamora</div>
+            <div>dlimutin@gmail.com</div>
           </div>
         </div>
         <div>
