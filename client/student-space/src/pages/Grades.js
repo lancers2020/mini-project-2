@@ -119,6 +119,14 @@ function Grades() {
   return (
     <div className='grades-container'>
       <Layout math={math} english={english} science={science} filipino={filipino} pe={pe} programming={programming}/>
+      <div className='layout-left-container'>
+        <div>Print</div>
+        <div>Download</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
   )
 }
