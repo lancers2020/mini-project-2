@@ -20,7 +20,7 @@
 .layout-container{
     background-color: rgb(222, 186, 206);
     width: 800px;
-    height: 550px;
+    height: fit-content;
     padding: 5px;
 }
 .layout-container>div:nth-child(1){
@@ -33,8 +33,8 @@
 }
 .layout-container>div:nth-child(2),
 .layout-container>div:nth-child(3){
-    background-color: gold;
-    padding: 5px;
+    /* background-color: gold; */
+    /* padding: 5px; */
 }
 .layout-container>div>div:nth-child(1){
     background-color: white;
@@ -69,4 +69,31 @@
     display: flex;
     align-items: center;
     /* background-color: blue; */
+}
+.grade-display{
+    background-color: rgb(222, 186, 206) !important;
+    font-size: 35px !important;
+    margin: auto;
+    text-align: start;
+    justify-content: start;
+    left: 0;
+    width: 98% !important;
+    border: none !important;
+    font-family: cursive;
+}
+.grade-display>div{
+    display: block;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.grade-display>div:nth-child(2){
+    margin-left: 30px;
+}
+.grade-display>div:nth-child(1){
+    width: 70%;
+}
+.grade-display>div>div{
+    border-bottom: 2px solid black;
 }

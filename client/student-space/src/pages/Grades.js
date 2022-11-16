@@ -3,42 +3,57 @@ import "./Pages.css";
 import Profilelogo from "../pictures/profile-user.png";
 import Axios from 'axios';
 
-function Layout({data, }){
+function Layout({math, english, science, filipino, pe, programming}){
   const [sem, setSem] = useState(1);
-  const [math, setMath] = useState([]);
-  const [english, setEnglish] = useState([]);
-  const [science, setScience] = useState([]);
-  const [filipino, setFilipino] = useState([]);
-  const [pe, setPe] = useState([]);
-  const [programming, setProgramming] = useState([]);
-
-  const sem1 = data[0];
-  const sem2 = data[1];
 
   const Display = ()=>{
     if(sem == 1){
       return(
-        <div>
-          semester: {sem1.semester}
-          math: {sem1.math}
-          english: {sem1.english}
-          science: {sem1.science}
-          filipino: {sem1.filipino}
-          pe: {sem1.pe}
-          programming: {sem1.programming}
+        <div className='grade-display-parent'>
+          <div className='grade-display'>
+            <div>
+              <div>semester:</div>
+              <div>math:</div>
+              <div>english:</div>
+              <div>science:</div>
+              <div>filipino:</div>
+              <div>pe:</div>
+              <div>programming:</div></div>
+            <div>
+              <div>{sem}</div>
+              <div>{math[0]}</div>
+              <div>{english[0]}</div>
+              <div>{science[0]}</div>
+              <div>{filipino[0]}</div>
+              <div>{pe[0]}</div>
+              <div>{programming[0]}</div>
+            </div>
+          </div>
         </div>
       )
     }
     else{
       return(
-        <div>
-          semester: {sem2.semester}
-          math: {sem2.math}
-          english: {sem2.english}
-          science: {sem2.science}
-          filipino: {sem2.filipino}
-          pe: {sem2.pe}
-          programming: {sem2.programming}
+        <div className='grade-display-parent'>
+          <div className='grade-display'>
+            <div>
+              <div>semester:</div>
+              <div>math:</div>
+              <div>english:</div>
+              <div>science:</div>
+              <div>filipino:</div>
+              <div>pe:</div>
+              <div>programming:</div></div>
+            <div>
+              <div>{sem}</div>
+              <div>{math[1]}</div>
+              <div>{english[1]}</div>
+              <div>{science[1]}</div>
+              <div>{filipino[1]}</div>
+              <div>{pe[1]}</div>
+              <div>{programming[1]}</div>
+            </div>
+          </div>
         </div>
       )
     }
@@ -73,16 +88,37 @@ function Layout({data, }){
 
 function Grades() {
   const [grades, setGrades] = useState([]);
+
+  const listFirstSem = [];
+  const listSecondSem = [];
+
+  const math = [];
+  const english = [];
+  const science = [];
+  const filipino = [];
+  const pe = [];
+  const programming = [];
+
   useEffect(()=>{
     Axios.get("http://localhost:3001/grades").then((response)=>{
       setGrades(response.data);
       console.log("axios get success");
       console.log(response.data);
-    })
+    });
+
   }, []);
+  
+  Object.keys(grades).map(item => {
+    math.push(grades[item].math);
+    english.push(grades[item].english);
+    science.push(grades[item].english);
+    filipino.push(grades[item].filipino);
+    pe.push(grades[item].pe);
+    programming.push(grades[item].programming);
+  })
   return (
     <div className='grades-container'>
-      <Layout data={grades}/>
+      <Layout math={math} english={english} science={science} filipino={filipino} pe={pe} programming={programming}/>
     </div>
   )
 }
