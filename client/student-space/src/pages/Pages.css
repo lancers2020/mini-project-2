@@ -170,3 +170,99 @@
     right: 7px;
     bottom : 7px;
 }
+
+
+/* this is for Bulletin.js */
+.bulletin-container{
+    /* background-color: red; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.bulletin-left{
+    position: relative;
+    background-color: #f7ff9c;
+    width: 500px;
+    height: 600px;
+    margin-top: 70px;
+}
+.bulletin-right{
+    background-color: green;
+    width: 800px;
+    height: 680px;
+    margin-top: 70px;
+}
+.bulletin-left>h2{
+    margin: 20px auto;
+    width: fit-content;
+    position: relative;
+    /* background-color: red; */
+    font-size: 70px;
+    font-family: cursive;
+    color: white;
+    -webkit-text-stroke: .3vw #ff7300;
+}
+.bulletin-left>h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #c4c2ff;
+    -webkit-text-stroke: black;
+    border-right: 5px solid #c4c2ff;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes animate {
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+.bulletin-left>h3{
+    padding: 10px;
+    background-color: rebeccapurple;
+    color: white;
+    font-family: cursive;
+    font-size: 25px;
+}
+
+/* this is for bulletin scotch-tapes */
+.bulletin-left>div:nth-child(1),
+.bulletin-left>div:nth-child(2),
+.bulletin-left>div:nth-child(3),
+.bulletin-left>div:nth-child(4){
+    position: absolute;
+    width: 30px;
+    height: 80px;
+    background-color: rgba(255, 233, 194, 0.5);
+}
+.bulletin-left>div:nth-child(1){
+    left: -8px;
+    top: -40px;
+    transform: rotate(45deg);
+    height: 110px;
+}
+.bulletin-left>div:nth-child(2){
+    right: -2px;
+    top: -20px;
+    transform: rotate(-25deg);
+}
+.bulletin-left>div:nth-child(3){
+    right: -2px;
+    bottom: -20px;
+    transform: rotate(-145deg);
+}
+.bulletin-left>div:nth-child(4){
+    left: -10px;
+    bottom: -12px;
+    transform: rotate(145deg);
+}
