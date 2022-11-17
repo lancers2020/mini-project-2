@@ -1,4 +1,6 @@
 import React from 'react'
+import FireworkLeft from "../pictures/fireworks.png";
+import FireworkRight from "../pictures/fireworks_2.png";
 
 function Bulletin() {
   return (
@@ -14,8 +16,10 @@ function Bulletin() {
         <h3>
           2022 was a rainbow of POSSIBILITIES, so here's to creating NEW GOALS for 2023
         </h3>
-        <div id="quotations-start" className='quotations'></div>
-        <div id="quotations-end" className='quotations'></div>
+        <div className='greetings'>happy new year!</div>
+        <div id="fireworks-left" className='fireworks'><img src={FireworkLeft} width="100%" heigh="auto"/></div>
+        <div id="fireworks-right" className='fireworks'><img src={FireworkRight} width="100%" heigh="auto"/></div>
+        <h5>Classes will continue on January 4, 2023!</h5>
       </div>
       <div className='bulletin-right'>
 
