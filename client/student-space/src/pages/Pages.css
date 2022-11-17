@@ -177,7 +177,7 @@
     /* background-color: red; */
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .bulletin-left{
@@ -185,12 +185,6 @@
     background-color: #f7ff9c;
     width: 500px;
     height: 600px;
-    margin-top: 70px;
-}
-.bulletin-right{
-    background-color: green;
-    width: 800px;
-    height: 680px;
     margin-top: 70px;
 }
 .bulletin-left>h2{
@@ -260,12 +254,14 @@
     right: -2px;
     bottom: -20px;
     transform: rotate(-145deg);
+    background-color: rgba(255, 233, 194, 0.8);
 }
 .bulletin-left>div:nth-child(4){
     left: -10px;
     bottom: -12px;
     transform: rotate(145deg);
     z-index: 2;
+    background-color: rgba(255, 233, 194, 0.8);
 }
 
 /* fireworks */
@@ -309,7 +305,61 @@
     color: white;
     position: absolute;
     bottom: 0;
-    /* border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px; */
-    border-radius: 0 0 0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* bulletin-right */
+.bulletin-right{
+    /* border: 2px solid red; */
+    width: 550px;
+    height: 680px;
+    margin-top: 70px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.status-container{
+    background-color: rgb(59, 0, 98);
+    border-radius: 10px 10px 0 0;
+    color: white;
+    width: 500px;
+    margin-bottom: 40px;
+}
+.status-container>div:nth-child(1){
+    /* background-color: green; */
+    padding: 5px;
+    text-align: start;
+}
+.status-profile{
+    /* background-color: rgb(216, 216, 216); */
+    width: fit-content;
+    text-align: left;
+    padding: 5px;
+    border-radius: 5px;
+}
+.status-profile>div:nth-child(1){
+    font-size: 17px;
+    font-weight: bold;
+}
+.status-profile>div:nth-child(2){
+    font-size: 13px;
+}
+.status-container>div>div:nth-child(2){
+    margin-top: 10px;
+    /* background-color: red; */
+}
+
+/* bulletin-middle */
+.events{
+    background: linear-gradient(to bottom, #1C6758, #6d4ca1);
+    margin: 0 50px 0 80px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 60px;
+    font-family: cursive;
+    font-weight: bold;
+    -webkit-text-stroke: .3vw #F37878;
+    color: white;
 }
