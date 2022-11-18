@@ -14,7 +14,7 @@
   margin-left: 8px;
 }
 
-button {
+.stopwatch-button {
   font-size: 16px;
   background-color: rgb(217, 60, 35);
   color: #fff;
@@ -23,12 +23,12 @@ button {
   padding: 6px 12px;
   cursor: pointer;
 }
-button:hover {
+.stopwatch-button:hover {
   background-color: rgb(173, 47, 28);
 }
-button:active {
+.stopwatch-button:active {
   background-color: rgb(130, 35, 21);
 }
-button:focus {
+.stopwatch-button:focus {
   outline: 0;
 }
