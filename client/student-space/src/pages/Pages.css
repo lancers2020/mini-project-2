@@ -379,12 +379,197 @@
     align-items: center;
     flex-direction: column;
 }
-.menu-top{
-    /* background-color: red; */
-    width: 100%;
+.menu-content{
+    height: 660px;
+    width: 90%;
+    margin: auto;
+    margin-top: 82px;
+    background: linear-gradient(to bottom, rgb(243, 210, 255), rgb(255, 244, 246));
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.menu-bottom{
-    background-color: blue;
+.menu-top{
+    /* background-color: blue; */
+    position: relative;
     width: 100%;
+    height: 40%;
+    display: flex;
 }
 
+.menu-top>div{
+    padding: 10px;
+    background: linear-gradient(to right, rgb(245, 253, 255), rgb(254, 245, 255)) ;
+}
+.menu-top>div:nth-child(1){
+    margin: 10px 20px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 10px 5px rgb(206, 206, 206);
+}
+.menu-top>div:nth-child(2){
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: start;
+}
+.menu-top>div:nth-child(2)>div:nth-child(1){
+    font-size: 40px;
+}
+.menu-top>div:nth-child(2)>div:nth-child(2){
+    font-style: italic;
+}
+.menu-top>div:nth-child(2)>div:nth-child(4){
+    position: absolute;
+    width: 100%;
+    border-bottom: 5px solid rgb(222, 222, 222);
+    left: 0;
+    margin-top: 10px;
+}
+.menu-top>div:nth-child(2)>div:nth-child(5){
+    margin-top: 30px;
+}
+.menu-top>div:nth-child(2)>div:nth-child(5),
+.menu-top>div:nth-child(2)>div:nth-child(6),
+.menu-top>div:nth-child(2)>div:nth-child(7){
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+/* logout and update buttons */
+.menu-logout:hover,
+.menu-update:hover{
+    /* transform: translateX(10px); */
+    width: 10%;
+}
+.menu-update{
+    transition-duration: .3s;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 160px;
+    width: 80px;
+    height: 15px;
+    background: #0dc800 !important;
+}
+.menu-logout{
+    transition-duration: .3s;
+    cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 200px;
+    width: 80px;
+    height: 15px;
+    background: rgb(255, 0, 81) !important;
+}
+/* menu top right */
+.menu-top-right{
+    width: 55%;
+    margin: 10px 10px 10px 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-top-right>div:nth-child(1)>div:hover,
+.menu-top-right>div:nth-child(2)>div:hover,
+.menu-top-right>div:nth-child(3)>div:hover,
+.menu-top-right>div:nth-child(4)>div:hover{
+    transition-duration: .4s;
+    transform: scale(1.2);
+}
+.menu-top-right>div:nth-child(1)>div,
+.menu-top-right>div:nth-child(2)>div,
+.menu-top-right>div:nth-child(3)>div,
+.menu-top-right>div:nth-child(4)>div{
+    transition-duration: .3s;
+    cursor: pointer;
+    display: flex;
+    /* background: red; */
+    margin: 30px 10px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0 10px;
+    background: linear-gradient(to right, rgb(245, 253, 255), rgb(254, 245, 255)) padding-box,
+              linear-gradient(to right, rgb(187, 241, 255), rgb(248, 188, 255)) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+}
+.menu-top-right>div:nth-child(4)>div{
+    margin: 10px;
+}
+
+/* menu bottom */
+.menu-bottom{
+    background: rgb(139, 123, 189);
+    width: 70%;
+    height: 56%;
+    border-radius: 10px;
+    display: flex;
+    margin-left: 10px;
+    align-self: flex-start;
+}
+.menu-bottom-left{
+    /* background-color: red; */
+}
+.menu-bottom-left>div:nth-child(2),
+.menu-bottom-left>div:nth-child(3),
+.menu-bottom-left>div:nth-child(4),
+.menu-bottom-left>div:nth-child(5){
+    width: fit-content;
+    padding: 15px;
+    /* background-color: green; */
+    border-radius: 5px;
+    margin: 20px;
+    background: linear-gradient(to right, rgb(255, 240, 230), rgb(236, 221, 255));
+    cursor: pointer;
+    transition-duration: .2s;
+}
+.menu-bottom-left>div:nth-child(2):hover,
+.menu-bottom-left>div:nth-child(3):hover,
+.menu-bottom-left>div:nth-child(4):hover,
+.menu-bottom-left>div:nth-child(5):hover{
+    transition-duration: .4s;
+    transform: scale(1.2);
+}
+
+.menu-bottom-left>div:nth-child(4){
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* clock */
+.menu-content{
+    position: relative;
+}
+.menu-content>div:nth-child(3){
+    position: absolute;
+    right: 90px;
+    bottom: 90px;
+}
+
+/* picture (books)*/
+.books{
+    position: absolute;
+    bottom: 25px;
+    right: 420px;
+}

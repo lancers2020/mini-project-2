@@ -1,7 +1,30 @@
+/* for close */
+.stopwatch-x{
+  font-size: 18px;
+  position: absolute;
+  background-color: rgb(255, 200, 200);
+  right: 0;
+  top: -34px;
+  padding: 5px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+}
+.stopwatch-x:hover{
+  background-color: red;
+  color: white;
+  border-color: white;
+}
+
 .Timers {
-  width: 180px;
+  font-size: 30px;
+  position: relative;
+  width: 300px;
+  height: 400px;
   margin: 0 auto;
   text-align: center;
+  padding-top: 20px;
+  box-shadow: 0 0 10px 5px rgb(221, 221, 221);
 }
 
 #display {

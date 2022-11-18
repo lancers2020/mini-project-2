@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import IconCalculator from '../calculator/IconCalculator';
 import Clock from '../components/Clock';
 import IconTodo from '../todo-app/IconTodo';
+import IconStopwatch from "../stopwatch/IconStopwatch";
 import './Pages.css';
-import Stopwatch from '../stopwatch/Stopwatch';
 
 function Home() {
   return (
@@ -16,6 +16,9 @@ function Home() {
       </div>
       <div style={{ marginInline: '10px' }}>
         <IconCalculator />
+      </div>
+      <div style={{ marginInline: '10px' }}>
+        <IconStopwatch />
       </div>
     </div>
   );

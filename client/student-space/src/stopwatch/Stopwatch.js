@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Stopwatch.css';
 
-const Stopwatch = () => {
+const Stopwatch = ({event}) => {
   const [time, setTime] = React.useState(0);
   const [timerOn, setTimerOn] = React.useState(false);
 
@@ -21,11 +21,12 @@ const Stopwatch = () => {
 
   return (
     <div className='Timers'>
+      <div onClick={event} className="stopwatch-x">close</div>
       <h2>Stopwatch</h2>
       <div id='display'>
-        <span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
-        <span>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-        <span>{('0' + ((time / 10) % 100)).slice(-2)}</span>
+        <div>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</div>
+        <div>{('0' + Math.floor((time / 1000) % 60)).slice(-2)}:</div>
+        <div>{('0' + ((time / 10) % 100)).slice(-2)}</div>
       </div>
 
       <div id='buttons'>

@@ -24,9 +24,8 @@ function Navbar() {
           </div>
         </div>
         <div>
-          <div>
-            <div className="link">
-              search
+          <div style={{border: "none"}}>
+            <div id="search-bar" className="link">
             </div>
           </div>
           <div>
