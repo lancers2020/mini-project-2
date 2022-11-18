@@ -19,3 +19,77 @@ button:hover{
   border: 2px solid white;
   cursor: pointer;
 }
+
+
+/* clock */
+.clock{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 227.5px;
+  height: 227.5px;
+  background: url("../pictures/clock.png");
+  background-size: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgb(232, 232, 232);
+  border-radius: 50%;
+}
+.clock::before{
+  position: absolute;
+  content: "";
+  width: 9.75px;
+  height: 9.75px;
+  background: black;
+  border-radius: 50%;
+  z-index: 100;
+}
+.clock> .hour,
+.clock> .minute,
+.clock> .second{
+  position: absolute;
+}
+.clock> .hour, .hr{
+  width: 104px;
+  height: 104px;
+}
+.clock> .minute, .min{
+  width: 123.5px;
+  height: 123.5px;
+}
+.clock> .second, .sec{
+  width: 149.5px;
+  height: 149.5px;
+}
+.hr, .min, .sec{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  position: absolute;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+.hr::before{
+  content: "";
+  position: absolute;
+  width: 5.2px;
+  height: 52px;
+  background-color: red;
+  z-index: 10;
+}
+.min::before{
+  content: "";
+  position: absolute;
+  width: 2.6px;
+  height: 58.5px;
+  background-color: black;
+  z-index: 11;
+}
+.sec::before{
+  content: "";
+  position: absolute;
+  width: 1.3px;
+  height: 97.5px;
+  background-color: black;
+  z-index: 12;
+}

@@ -1,4 +1,5 @@
 .home-container{
+    /* position: relative; */
     margin: auto;
     /* height: 750px; */
     display: flex; 
@@ -6,6 +7,11 @@
     align-items: center;
     height: 100vh;
     /* background-color: red; */
+}
+.home-left{
+    position: absolute;
+    left: 20px;
+    top: 100px;
 }
 
 /* grades page */
@@ -362,4 +368,23 @@
     font-weight: bold;
     -webkit-text-stroke: .3vw #F37878;
     color: white;
+    height: 100%;
 }
+
+/* Menu.js */
+.menu-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-top{
+    /* background-color: red; */
+    width: 100%;
+}
+.menu-bottom{
+    background-color: blue;
+    width: 100%;
+}
+

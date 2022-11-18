@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 function Menu() {
   return (
-    <div>MENU Page</div>
+    <div className='menu-container'>
+      <div className='menu-top'>
+        
+      </div>
+      <div className='menu-bottom'>
+        router
+      </div>
+    </div>
   )
 }
 
