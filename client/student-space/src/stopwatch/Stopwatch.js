@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Stopwatch.css';
 
-const App = () => {
+const Stopwatch = () => {
   const [time, setTime] = React.useState(0);
   const [timerOn, setTimerOn] = React.useState(false);
 
