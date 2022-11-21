@@ -19,7 +19,7 @@ const Content = () => {
   } else {
     return (
         <Button
-        name='Todo'
+        name='StopWatch'
         onClick={() => {
           setIsClicked(true);
         }}
